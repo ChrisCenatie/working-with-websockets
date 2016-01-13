@@ -1,0 +1,29 @@
+{
+  "name": "ask-the-audience",
+  "version": "1.0.0",
+  "description": "Websockets tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisCenatie/working-with-websockets.git"
+  },
+  "keywords": [
+    "Websockets",
+    "Audience"
+  ],
+  "author": "Chris Cenatiempo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChrisCenatie/working-with-websockets/issues"
+  },
+  "homepage": "https://github.com/ChrisCenatie/working-with-websockets#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^4.0.0",
+    "socket.io": "^1.4.4"
+  }
+}
