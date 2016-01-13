@@ -24,9 +24,11 @@ socket.on('voteCount', function (votes) {
 })
 
 var buttons = document.querySelectorAll('#choices button');
+var voteCast = document.getElementById('cast-vote');
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
     socket.send('voteCast', this.innerText);
+    voteCast.innerHTML = "Your vote " + this.innerText + " has been submitted";
   });
 }
