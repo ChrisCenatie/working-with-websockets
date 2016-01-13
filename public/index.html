@@ -2,25 +2,36 @@
 <html>
   <head>
     <title>Ask the Audience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <link rel="stylesheet" href='style.css'>
   </head>
   <body>
-    <div id="connection-count"></div>
-    <div id="status-message"></div>
-    <div id="cast-vote"></div>
-    <div id="choices">
-      <button>A</button>
-      <button>B</button>
-      <button>C</button>
-      <button>D</button>
-    </div>
-    <div id="vote-count">
-      <h3>Vote Tally</h3>
-      <ul>
-        <li id="A"></li>
-        <li id="B"></li>
-        <li id="C"></li>
-        <li id="D"></li>
-      </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4" id="connection-count"><h3></h3></div>
+        <div class="col s12 m4" id="status-message"><h3></h3></div>
+        <div class="col s12 m4" id="cast-vote"></div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div id="choices">
+          <h5>Cast Your Vote</h5>
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+        </div>
+      </div>
+      <div class="row" id="vote-count">
+        <h5>Vote Tally</h5>
+        <ul class="collection">
+          <li class="collection-item" id="A"></li>
+          <li class="collection-item" id="B"></li>
+          <li class="collection-item" id="C"></li>
+          <li class="collection-item" id="D"></li>
+        </ul>
+      </div>
     </div>
     <!-- Make sure your JS is at the bottom of the body! -->
     <script src="/socket.io/socket.io.js"></script>
